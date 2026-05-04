@@ -16,7 +16,7 @@
             color: #222;
             background-color: rgb(248, 242, 242);
         }
-
+        /* titulo ocorrencia*/
         h1 {
             text-align: center;
             font-size: 28px;
@@ -24,18 +24,19 @@
             border-bottom: 3px solid #000x;
             padding-bottom: 10px;
         }
-
+         /* tamanho do "fato observado"*/
         h2 {
             font-size: 16px;
             margin: 18px 0 8px 0;
         }
-
+        /* linhas das infomações do aluno */
         .campo {
             display: flex;
             align-items: center;
             margin-bottom: 12px;
         }
 
+        /* muda espaçamento de a fonte das letras*/
         .campo label {
             min-width: 220px;
             font-weight: bold;
@@ -47,23 +48,17 @@
             padding-bottom: 3px;
             margin-left: 8px;
         }
-
-        .data {
-            display: inline-block;
-            min-width: 180px;
-            border-bottom: 1px solid #000;
-            padding-bottom: 3px;
-        }
-
+        
+      
+        /* linha que divide as informações do aluno e das linhas das linha da ocorrência*/
         hr {
             border: 1px solid #000;
             margin: 25px 0;
         }
-
+        /* linhas do fato observado*/
         .fato {
             border: 2px solid #000;
-            min-height: 380px;           /* aumentei um pouco para caber mais linhas */
-            padding:20px 15px;
+            min-height: 380px;       
             margin:20px 0;
             background-color: rgb(248, 242, 242)
             font-size:15px;
@@ -72,7 +67,7 @@
             overflow:hidden;
         }
 
-        /* Linhas horizontais dentro da área*/
+        /* Linhas dentro do qaudrado do fato observado*/
         .fato:before {
             content: '';
             position: absolute;
@@ -85,13 +80,6 @@
             background-size: 100% 28px;   /* distância entre as linhas */
             pointer-events: none;
             z-index: 1;
-        }
-
-        .fato p, .fato div {
-            position: relative;
-            z-index: 2;
-            margin: 0;
-            min-height: 28px;
         }
 
         .assinatura {
